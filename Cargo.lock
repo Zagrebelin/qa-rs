@@ -1849,21 +1849,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "myproject-change-this-name"
-version = "0.1.0"
-dependencies = [
- "anyhow",
- "base64-url",
- "dotenv",
- "env_logger 0.9.0",
- "jelly",
- "lazy_static",
- "log",
- "serde",
- "test-log",
-]
-
-[[package]]
 name = "net2"
 version = "0.2.37"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -2314,6 +2299,21 @@ dependencies = [
  "untrusted",
  "web-sys",
  "winapi 0.3.9",
+]
+
+[[package]]
+name = "rust-bridge"
+version = "0.0.1"
+dependencies = [
+ "anyhow",
+ "base64-url",
+ "dotenv",
+ "env_logger 0.9.0",
+ "jelly",
+ "lazy_static",
+ "log",
+ "serde",
+ "test-log",
 ]
 
 [[package]]

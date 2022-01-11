@@ -56,7 +56,7 @@ the interesting parts.
 - Install `sqlx-cli`, with: 
 
 ```
-cargo install sqlx-cli --no-default-features --features postgres
+cargo install sqlx-cli
 ```
 
 - Edit `.env.example` to use your settings.
