@@ -4,8 +4,8 @@
 
 {% for q in questions %}
 <p>
-    {{ q.id }}
-    {{ q.header }}
+    <a href="/qa/{{q.id}}">{{ q.header }}</a>
 </p>
 {% endfor %}
+
 {% endblock %}

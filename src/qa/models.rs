@@ -35,4 +35,16 @@ impl  Question {
             .collect()
         )
     }
+
+    pub async fn get_by_id(id: i32, pool: &PgPool) -> Result<Question, Error> {
+        let q = sqlx::query_as_unchecked!(
+            Question,
+            "SELECT id, header, body, created, updated FROM questions WHERE id=$1",
+            id
+        ).fetch_one(pool)
+            .await?;
+
+        Ok(q)
+    }
+
 }
