@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+{% for q in questions %}
+<p>
+    {{ q.id }}
+    {{ q.header }}
+</p>
+{% endfor %}
+{% endblock %}
